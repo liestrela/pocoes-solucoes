@@ -1,0 +1,135 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  width: 100%;
+}
+
+.count {
+  font-family: var(--font-display);
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent-dim);
+  margin-bottom: var(--space-sm);
+}
+
+.item {
+  background:
+    radial-gradient(ellipse at 15% 30%, rgba(255, 248, 200, 0.25) 0%, transparent 50%),
+    linear-gradient(165deg, #f0e8d0 0%, #ddd0a8 55%, #c8b888 100%);
+  border: 2px solid #c4995a;
+  outline: 2px solid #1a0e04;
+  outline-offset: -4px;
+  border-radius: var(--radius-sm);
+  padding: var(--space-md);
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.65);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  overflow: hidden;
+  max-width: 100%;
+  will-change: transform;
+}
+
+.item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.7);
+}
+
+.thumb {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  flex-shrink: 0;
+  border: 1px solid #b09060;
+  background: linear-gradient(135deg, #d8c8a0 0%, #c0aa7a 100%);
+}
+
+.info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.name {
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #2a1808;
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.desc {
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  color: #4a3828;
+  line-height: 1.5;
+  font-style: italic;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  word-break: break-all;
+}
+
+.price {
+  font-family: var(--font-display);
+  font-size: 0.72rem;
+  color: #7a4e10;
+  margin-top: 4px;
+  letter-spacing: 0.05em;
+}
+
+.deleteBtn {
+  flex-shrink: 0;
+  padding: 6px 14px;
+  font-family: var(--font-display);
+  font-size: 0.62rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #f0e0b0;
+  background: linear-gradient(180deg, #b07830 0%, #7a4e10 100%);
+  border: 1px solid #4a2e08;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255, 220, 120, 0.2);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  border-radius: var(--radius-sm);
+  transition: background 0.2s ease;
+  align-self: center;
+}
+
+.deleteBtn:hover {
+  background: linear-gradient(180deg, #8b2020 0%, #5a1010 100%);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 180, 180, 0.15);
+}
+
+.empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-2xl);
+  gap: var(--space-sm);
+  text-align: center;
+}
+
+.emptyText {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  color: var(--text-muted);
+  letter-spacing: 0.06em;
+}
+
+.emptyHint {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  color: var(--accent-dim);
+  font-style: italic;
+}

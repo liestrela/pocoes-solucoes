@@ -1,0 +1,27 @@
+x-backend-port: &backend-port 3001
+x-frontend-port: &frontend-port 8080
+
+services:
+  backend:
+    build: ./server
+    environment:
+      PORT: *backend-port
+    ports:
+      - target: *backend-port
+        published: *backend-port
+    volumes:
+      - ./server:/app
+      - /app/node_modules
+
+  frontend:
+    build: .
+    environment:
+      PORT: *frontend-port
+    ports:
+      - target: *frontend-port
+        published: *frontend-port
+    depends_on:
+      - backend
+    volumes:
+      - .:/app
+      - /app/node_modules
