@@ -32,7 +32,7 @@
 
 .title {
   font-family: var(--font-deco);
-  font-size: clamp(2.4rem, 6vw, 7rem);
+  font-size: clamp(1.8rem, 4vw, 3rem);
   font-weight: 400;
   line-height: 1.1;
   letter-spacing: 0.06em;
@@ -47,8 +47,6 @@
   font-family: var(--font-display);
   font-size: clamp(0.7rem, 1.5vw, 0.9rem);
   color: var(--text-muted);
-  letter-spacing: 0.4em;
-  text-transform: uppercase;
   font-style: normal;
   line-height: 1.6;
 }
@@ -59,12 +57,12 @@
   padding: 14px 44px;
   font-family: var(--font-display);
   font-size: 0.72rem;
+  text-transform: uppercase;
+  color: #f0e0b0;
   font-weight: 600;
   letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: var(--gold);
   text-shadow: 0 0 12px rgba(232, 192, 96, 0.4);
-  background: linear-gradient(180deg, #1e1408 0%, #110c05 100%);
+  background: linear-gradient(180deg, #a06820 0%, #6b4010 100%);
   border: 1px solid var(--accent-dim);
   box-shadow:
     0 0 0 1px #0a0602,
@@ -81,16 +79,18 @@
   content: '';
   position: absolute;
   inset: 0;
-  background: var(--accent);
+  background: linear-gradient(180deg, #a06820 0%, #6b4010 100%);
+  color: var(--gold);
+  border: 1px solid #3a2008;
   opacity: 0;
-  transition: opacity 0.25s ease;
+  transition: opacity 0.01s ease;
   z-index: -1;
 }
 
 .cta:hover {
-  color: var(--ink);
   border-color: var(--accent);
   text-shadow: none;
+  background: linear-gradient(180deg, #b07830 0%, #7a5020 100%);
   box-shadow:
     0 0 0 1px #0a0602,
     0 0 36px rgba(196, 153, 90, 0.35),

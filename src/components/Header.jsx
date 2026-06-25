@@ -20,8 +20,9 @@ export default function Header() {
           <Link to="/" className={styles.navLink}>← Loja</Link>
         ) : (
           <>
-            <a href="#produtos" className={styles.navLink}>Produtos</a>
+            <a href="#sobre" className={styles.navLink}>Sobre</a>
             <a href="#historia" className={styles.navLink}>História</a>
+            <a href="#produtos" className={styles.navLink}>Produtos</a>
             <a href="#contato" className={styles.navLink}>Contato</a>
             <Link to="/admin" className={styles.navLinkAdmin}>Painel Admin</Link>
           </>
@@ -45,8 +46,9 @@ export default function Header() {
             <Link to="/" className={styles.drawerLink} onClick={close}>← Loja</Link>
           ) : (
             <>
-              <a href="#produtos" className={styles.drawerLink} onClick={close}>Produtos</a>
+              <a href="#sobre" className={styles.drawerLink} onClick={close}>Sobre</a>
               <a href="#historia" className={styles.drawerLink} onClick={close}>História</a>
+              <a href="#produtos" className={styles.drawerLink} onClick={close}>Produtos</a>
               <a href="#contato" className={styles.drawerLink} onClick={close}>Contato</a>
               <Link to="/admin" className={styles.drawerLinkAdmin} onClick={close}>Painel Admin</Link>
             </>

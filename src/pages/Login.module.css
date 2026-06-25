@@ -27,6 +27,23 @@
   gap: var(--space-sm);
 }
 
+.back {
+  display: inline-block;
+  margin-bottom: var(--space-md);
+  font-family: var(--font-display);
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #7a4e10;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.back:hover {
+  color: #2a1808;
+  text-decoration: none;
+}
+
 .brand {
   font-family: var(--font-deco);
   font-size: 0.65rem;

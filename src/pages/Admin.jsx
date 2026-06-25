@@ -56,7 +56,6 @@ export default function Admin() {
       <Header />
       <main className={styles.main}>
         <div className={styles.titleBar}>
-          <p className={styles.eyebrow}>Acesso restrito</p>
           <h1 className={styles.title}>Painel Administrativo</h1>
           <button className={styles.logoutBtn} onClick={handleLogout}>Sair</button>
         </div>

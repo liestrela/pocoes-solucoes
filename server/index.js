@@ -37,13 +37,11 @@ app.post('/api/auth/logout', (req, res) => {
   res.status(204).end()
 })
 
-// rota pública — lista todas as poções
 app.get('/api/potions', async (req, res) => {
   const potions = await Potion.findAll()
   res.json(potions)
 })
 
-// rota protegida — cria uma poção nova
 app.post('/api/potions', requireAuth, async (req, res) => {
   const { name, description, image, price } = req.body
 
@@ -55,7 +53,6 @@ app.post('/api/potions', requireAuth, async (req, res) => {
   res.status(201).json(potion)
 })
 
-// rota protegida — deleta uma poção pelo id
 app.delete('/api/potions/:id', requireAuth, async (req, res) => {
   const potion = await Potion.findByPk(req.params.id)
 

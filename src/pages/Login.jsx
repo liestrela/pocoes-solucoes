@@ -26,6 +26,7 @@ export default function Login() {
   return (
     <main className={styles.main}>
       <div className={styles.card}>
+        <a href="/" className={styles.back}>← Voltar à loja</a>
         <p className={styles.brand}>Poções &amp; Soluções</p>
         <h1 className={styles.title}>Acesso Restrito</h1>
         <form className={styles.form} onSubmit={handleSubmit}>

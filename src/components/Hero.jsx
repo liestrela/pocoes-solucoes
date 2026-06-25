@@ -8,7 +8,7 @@ export default function Hero() {
         <p className={styles.tagline}>
           por Anabelle Merigold
         </p>
-        <a href="#produtos" className={styles.cta}>Clique aqui para ver o estoque</a>
+        <a href="#produtos" className={styles.cta}>Ver o Estoque</a>
       </div>
     </section>
   )

@@ -1,4 +1,5 @@
 .card {
+  color: var(--surface);
   position: relative;
   background:
     radial-gradient(ellipse at 25% 15%, rgba(255, 248, 200, 0.3) 0%, transparent 55%),

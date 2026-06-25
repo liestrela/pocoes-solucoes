@@ -3,7 +3,7 @@ import styles from './ShopInfo.module.css'
 export default function ShopInfo() {
   return (
     <>
-      <section className={styles.description}>
+      <section id="sobre" className={styles.description}>
         <div className={styles.inner}>
           <h2 className={styles.heading}>Sobre a Loja</h2>
           <p className={styles.body}>
@@ -22,24 +22,42 @@ export default function ShopInfo() {
             </p>
           </div>
           <div className={styles.historyPhotos}>
-            <div className={styles.photoFrame}>
-              <div className={styles.photoPlaceholder}>
+            <figure className={styles.photoFrame}>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/e/eb/Potions_Classroom_%286973086996%29.jpg"
+                alt="sala de poções, 1867"
+                className={styles.photo}
+                loading="lazy"
+              />
+              <figcaption className={styles.photoCaption}>
                 <span className={styles.photoYear}>1867</span>
-                <span className={styles.photoCaption}>Fundação da loja</span>
-              </div>
-            </div>
-            <div className={styles.photoFrame}>
-              <div className={styles.photoPlaceholder}>
+                Fundação da loja
+              </figcaption>
+            </figure>
+            <figure className={styles.photoFrame}>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/7/78/Potions_Classroom_%2840395286203%29.jpg"
+                alt="sala de poções, 1923"
+                className={styles.photo}
+                loading="lazy"
+              />
+              <figcaption className={styles.photoCaption}>
                 <span className={styles.photoYear}>1923</span>
-                <span className={styles.photoCaption}>Reconstrução</span>
-              </div>
-            </div>
-            <div className={styles.photoFrame}>
-              <div className={styles.photoPlaceholder}>
+                Reconstrução
+              </figcaption>
+            </figure>
+            <figure className={styles.photoFrame}>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Potions_Classroom_%2847307949392%29.jpg"
+                alt="sala de poções, 1981"
+                className={styles.photo}
+                loading="lazy"
+              />
+              <figcaption className={styles.photoCaption}>
                 <span className={styles.photoYear}>1981</span>
-                <span className={styles.photoCaption}>Expansão do estoque</span>
-              </div>
-            </div>
+                Expansão do estoque
+              </figcaption>
+            </figure>
           </div>
         </div>
       </section>
